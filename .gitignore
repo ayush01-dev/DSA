@@ -1,4 +1,0 @@
-#ignoring exe file 
-*.exe  
-#ignoring gitignore file
-.gitignore 
