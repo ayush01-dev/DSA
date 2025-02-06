@@ -1,3 +1,4 @@
-# I am ignoring all the .exe files
-
-*.exe
+#ignoring exe file 
+*.exe  
+#ignoring gitignore file
+.gitignore 
