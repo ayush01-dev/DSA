@@ -9,17 +9,17 @@ int firstOccurance(vector <int> v , int target){
     int store = -1;
     while(start<=end){
         //checking mid value with target
-        if(v[mid]==target){
-            store = mid;
+        if(v[mid]==target){         //mid = 7;
+            store = mid;            //sotre = 7;
             //Search in left
-            end = mid-1;
-            mid = start+(end-start)/2;
+            end = mid-1;            //end = 6
+            mid = start+(end-start)/2;  //mid =3
 
 
         }
-        else if(target>v[mid]){
-            //search in right
-            start = mid+1;
+        else if(target>v[mid]){  //yes
+            //search in right       
+            start = mid+1;          
         }
         else if(target<v[mid]) {
             //search in left
