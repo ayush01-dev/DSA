@@ -40,7 +40,7 @@ int solve(vector<int> varr){
 }
 
 int main (){
-    vector <int> arr {1,1,2,2,3,3,4,4,3,600,600,4,4};
+    vector <int> arr {1,1,2,2,3,3,4,4,3,z600,600,4,4};
     int index = solve(arr);
 
     cout<<"Odd occuring element is "<<arr[index]<<endl;
