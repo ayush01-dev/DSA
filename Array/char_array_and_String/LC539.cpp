@@ -42,6 +42,7 @@ int main(){
 
     }
     
+    // this is very important "Game changer"
     int lastDiff = (time[0]+1440)-(time[n-1]);
     mini = min(mini,lastDiff);
 
@@ -49,3 +50,10 @@ int main(){
 
     return 0;
 }
+
+
+//Imp observations
+    //make string into int using stoi
+    //make a diff arry of only minutes where we compare diff and (sort to reduce complexity)
+    //find min dff
+    //time is a work in circle "must compare first and last minutes "
