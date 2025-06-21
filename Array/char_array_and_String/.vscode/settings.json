@@ -3,4 +3,8 @@
         "iostream": "cpp",
         "ostream": "cpp"
     }
+    ,
+    "files.exclude": {
+        "**/*.exe": true
+    }
 }
