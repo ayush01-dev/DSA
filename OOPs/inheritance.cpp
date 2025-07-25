@@ -13,7 +13,7 @@ class animal{
 };
 
 //Inherit Class
-class dog: public animal{
+class dog: public animal{   // DOG IS A ANIMAL (concept of inheritance)
 
 };
 
