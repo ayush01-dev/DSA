@@ -3,39 +3,46 @@ using namespace std;
 
 class animal{
     public:
+        //consturctor
+        animal(){
+            cout<<"iam inside animal "<<endl;
+        }
+        int age;
+
         void speak(){
             cout<<"speaking"<<endl;
         }
 };
 
-class dog:public animal{
 
+class dog:public animal{
     public:
-        //function overriding
-        void speak(){
-            cout<<"barking"<<endl;
-        }
- 
-};
+    //consturctor
+    dog(){
+        cout<<"iam inside dog "<<endl;
+    }
+        
+}; 
 
 int main(){
-
-    //animal*a = new animal();
-    //a->speak()
-    //o/p :- speaking
-
-    //dog*d = new dog();
-    //d->speak();
-    //o/p :- barking
+    //Note:- When we create a obj from child class it will first call Parent class construcutor
+    //then its own constructor
+    dog c;
+    cout<<endl;
 
 
-    //UPCASTING
-    animal*x = new dog(); //parent class ka pointer banaya hai or object dog type ka banya hai.
-    x->speak();
+    animal* a = new animal;
 
-    //DOWNCASTING
-    dog* d = (dog*)new animal();
-    d->speak();
+    cout<<endl;
+    animal* b = new dog;
+    //first parent consturctor will be called 
+    //then child constructor will be called cuz we are creating dog type of constuctor here
+
+    cout<<endl;
+
+    dog* d = (dog*)new animal;
+    
+
 
     return 0;
 }

@@ -31,7 +31,7 @@ int main(){
     // d->speak();
     // o/p :- barking
 
-    // when no vertual function were made in parent class
+    // when  vertual function were made in parent class
 
         // UPCASTING
         animal *x = new dog(); // parent class ka pointer banaya hai or object dog type ka banya hai.
