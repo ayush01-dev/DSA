@@ -22,9 +22,11 @@ int main(){
         cout<<endl;
     }
     // De-allocation
+    //step 1
     for(int i = 0;i<col;i++){
         delete []arr[i];
     }
+    //step 2
     delete []arr;
     return 0;
 }
