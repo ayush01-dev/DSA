@@ -22,7 +22,7 @@ bool findkey(string name, char key,int i){
 int main(){
     string name = "ayush";
     //string  key = "u";
-    char key = 'u';z
+    char key = 'u';
     int i = 0;
     
     int ans = findkey(name,key,i);
