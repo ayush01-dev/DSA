@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "xlocale": "cpp"
     },
     "files.exclude": {
         "**/*.exe": true
