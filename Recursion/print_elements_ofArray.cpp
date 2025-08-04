@@ -13,7 +13,7 @@ void printArray(int arr[],int i,int n ){
     //baki recursion ke liye
     printArray(arr,++i,n);
 
-    //my mistake:- i write i++ insteed of ++i 
+    //my mistake:- I write i++ insteed of ++i (don't use post incremtne here use preincrement) 
     //so when i++ is there it will copy i =0 then increment thay why getting alwas first element in array
     //imp thing to remember
 }
