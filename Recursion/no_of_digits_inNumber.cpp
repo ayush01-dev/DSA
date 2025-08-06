@@ -5,14 +5,15 @@ void finddigits(int n ){
     if (n == 0)
         return ;
 
-    //first case
-    int ans = n % 10;
-    cout<<ans<<"";
+    
     
 
     //rest for recurstion
     finddigits(n/10);
 
+    //first case
+    int ans = n % 10;
+    cout<<ans<<"";
 
     
 }
