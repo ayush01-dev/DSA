@@ -12,16 +12,16 @@ bool isSorted(int arr[], int  i,int& n ){
     }
 
     //baki recursion ke liye
-    return isSorted(arr,++i,n);
+    return isSorted(arr,i+1,n);
 
     
 }
 
 int main(){
     int arr1[] = {10,20,30,40,50,60};
-    int arr2[] = {2,4,6,8,9,7};
+    int arr2[] = {2,4,6,8,9,7}; //you can also use vector for better code 
 
-    int n = 5;
+    int n = 6;
 
     int index = 0;
 
