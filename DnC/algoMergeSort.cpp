@@ -10,22 +10,32 @@ void mergeTwoSortedArray(int* arr,int s , int e){
     int* left = new int[len1];
     int* right = new int[len2];
 
+
     //copy values into array
     int k = s;
     for(int i = 0; i<len1 ; i++){
         left[i] = arr[k];
+        cout<<"left element "<<left[i]<<endl;
         k++;
 
         
     }
+
+    cout<<endl;
     
     
 
     k = mid + 1;
     for (int i = 0; i<len2 ; i++){
         right[i] = arr[k];
+        cout<<"right element "<<right[i]<<endl;
         k++;
     }
+    
+    cout<<endl;
+    
+    
+    
 
 
 
