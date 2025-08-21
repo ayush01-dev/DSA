@@ -40,7 +40,7 @@ void mergeTwoSortedArray(int* arr,int s,int e){
         }
     }
 
-    //remaining array ko add kr do 
+    //remaining array ko add kr do .
     //for left arry
     while(leftIndex < len1){
         arr[mainArrayIndex++] = left[leftIndex++];
