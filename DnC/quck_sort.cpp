@@ -1,5 +1,6 @@
 #include <iostream> 
 using namespace std;
+//TODO: this logic may not valid for all the test cases
 
 int partition(int arr[], int s , int e){
     int pivotIndex = s;
@@ -33,7 +34,11 @@ int partition(int arr[], int s , int e){
             j--;
         }
 
+        //Two case
+        //A . find index to swap
+        //B. No need to swap
 
+        //if the i or  j will  pass two while inner loop then if conditiono will not run 
         if(i < pivotIndex &&  j > pivotIndex){
             swap(arr[i],arr[j]);
         }
