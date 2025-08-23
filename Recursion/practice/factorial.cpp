@@ -8,7 +8,7 @@ int factorial(int n){
     }
 
     
-    //base case
+    //recursive call 
     int product = n * factorial(n-1);
     cout<<product<<endl;
     return product;
