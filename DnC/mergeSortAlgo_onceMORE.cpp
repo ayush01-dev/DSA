@@ -74,7 +74,7 @@ void mergesort(int* arr, int s , int e){
 
     //left part sort ho gya && right part sort ho gya 
     //then call "mergeTwoSortedArray"
-    //while calling this finction we are passing ther upadated array
+    //while calling this finction we are passing the upadated array
     //for first call array is {2,10}
     //for second call array is {2,10,3}
     //for third call array is {29,0}

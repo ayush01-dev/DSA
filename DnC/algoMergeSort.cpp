@@ -2,6 +2,8 @@
 using namespace std;
 
 void mergeTwoSortedArray(int* arr,int s , int e){
+    cout<<"start :"<<s<<endl;
+    cout<<"end :"<<e<<endl;
     int mid = s+(e-s)/2;
 
     int len1 = mid - s + 1;
@@ -21,7 +23,7 @@ void mergeTwoSortedArray(int* arr,int s , int e){
         
     }
 
-    cout<<endl;
+    //cout<<endl;
     
     
 
