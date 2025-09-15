@@ -6,7 +6,8 @@ using namespace std;
 //this thing will only work for this test case
 //for more other you have to use % modulus
 
-
+//impoten thing to remember here is 
+// use :- varr[(i+k)%n] = dup[i]; 
 int  main(){
     
     vector <int> varr = {1,2,3,4};
