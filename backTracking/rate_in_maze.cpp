@@ -71,6 +71,11 @@ int main(){
     int maze[3][3] ={{1,0,0},
                     {1,1,0},
                     {1,1,1}};
+
+    if(maze[0][0] == 0){
+        cout<<"No path exist "<<endl;
+        return 0;
+    }
     int row = 3;
     int col = 3;
 
@@ -95,6 +100,10 @@ int main(){
     //happy :) 
 
     cout<<endl;
+
+    if(path.size() == 0){
+        cout<<"No path exist "<<endl;
+    }
 
     return 0;
 } 
