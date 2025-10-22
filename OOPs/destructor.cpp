@@ -22,7 +22,7 @@ int main(){
     animal a; // obj in static will automatically call destructor to free space when then scope is end
 
     animal* b = new animal;
-    delete b; // in head we have to do it manually by using delete funtion
+    delete b; // in heap we have to do it manually by using delete funtion
 
     return 0;
 }
