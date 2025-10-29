@@ -11,7 +11,7 @@ public:
 
 void setter (int weight){
    this -> weight = weight; // so here  we have use this keyword 
-                            // which is pointer to current 
+                            // which is pointer to current obj
 }
 
 int getter (){
