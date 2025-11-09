@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "utility": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "xutility": "cpp"
     },
     "files.exclude": {
         "**/.git": true,
