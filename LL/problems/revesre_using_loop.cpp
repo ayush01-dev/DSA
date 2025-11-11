@@ -58,7 +58,7 @@ Node* reverseUsingRecursion(Node* prev, Node* curr){
 
 
     //recursive call
-    reverseUsingRecursion(prev,curr);
+    return reverseUsingRecursion(prev,curr);
 }
 
 int main(){
