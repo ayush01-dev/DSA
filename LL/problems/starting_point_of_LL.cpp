@@ -1,11 +1,9 @@
 #include <iostream>
 using namespace std;
-
 class Node{
     public:
     int data;
     Node* next;
-
 
     Node(int data){
         this->data = data;
@@ -14,13 +12,14 @@ class Node{
 };
 
 bool checkForLoop(Node* &head){
-    if(head == NULL){
-        //LL is empty 
+    if(head == NULL ){
+        //LL is empty
         return false;
     }
 
     Node* slow = head;
     Node* fast = head;
+
     while(fast != NULL){
         fast = fast->next;
         if(fast != NULL){
@@ -29,7 +28,7 @@ bool checkForLoop(Node* &head){
         }
 
         if(fast == slow){
-            // loop is present
+            //LOOp detected
             return true;
         }
     }
@@ -37,17 +36,39 @@ bool checkForLoop(Node* &head){
 }
 
 
-void printLL(Node* &head){
-    Node* temp = head;
-    while(temp !=  NULL){
-        cout<<temp->data<<" ";
-        temp = temp -> next;
+Node* findstartingOfLOOp(Node* &head){
+    if(head == NULL){
+        //LL is empty
+        return NULL;
     }
+
+    Node* slow = head;
+    Node* fast = head;
+
+    while(fast != NULL){
+        fast = fast->next;
+        if(fast != NULL){
+            fast = fast->next;
+            slow = slow-> next;
+        }
+
+        if(fast == slow){
+            //loop detected
+            slow = head;
+            break;
+        }
+    }
+
+    while(slow != fast){
+        slow = slow->next;
+        fast = fast->next;
+    }
+
+    return slow;
+    
 }
 
 int main(){
-
-    
     Node* first = new Node(10);
     Node* second = new Node(20);
     Node* third = new Node(30);
@@ -70,12 +91,13 @@ int main(){
     eight->next = ninth;
     ninth->next = fifth;  // looping ninth with fifth;
 
-    
-    Node* head  = first;
-    
 
 
-    cout<<"Loop is present or not :"<<checkForLoop(head)<<endl;
+    Node* head = first;
+
+
+    cout<<"loop is present :"<<checkForLoop(head)<<endl;
+    cout<<"starting point of Loop is :"<<findstartingOfLOOp(head)->data<<endl;
 
 
     return 0;
