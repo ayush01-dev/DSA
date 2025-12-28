@@ -17,7 +17,7 @@ int main(){
 
 
     //removal in stack
-    st.pop(); // it will delet the last entery made in satck
+    st.pop(); // it will delete the last entery made in satck
 
     //check the top element in stack 
     cout<<"top element in stack is :" <<st.top()<<endl;

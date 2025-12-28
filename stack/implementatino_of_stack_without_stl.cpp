@@ -18,13 +18,13 @@ class stack{
 
     //push function
     void push(int data){
-        if(size - top > 1){
+        if(size - top > 1){    //Is there at least 1 empty space left in the array to push a new element?
             //space is availabe in stack
             top++;
             arr[top] = data;
         }
         else{
-            //STACK OVERFLOW
+            //STACK OVERFLOWP
             cout<<" STACK OVERFLOW "<<endl;
 
         }
@@ -33,7 +33,7 @@ class stack{
 
     //pop function
     void pop(){
-        if(top = -1){
+        if(top == -1){
             //stack under flow
             cout<<"STACK UNDER FLOW "<<endl;
         }
@@ -45,7 +45,7 @@ class stack{
 
     //get top function
     int gettop(){
-        if(top = -1){
+        if(top == -1){
             cout<<"There is NO  element in stack"<<endl;
         }
 
@@ -63,7 +63,7 @@ class stack{
     }
 
     bool isEmpty(){
-        if(top = -1){
+        if(top == -1){
             return true;
         }
         else{
@@ -75,7 +75,30 @@ class stack{
 };
 
 int main(){
-    
+    //decleration/creation  of stack ds
+    stack s(5);
+
+
+    //insertion in stack
+    s.push(10);
+    s.push(20);
+    s.push(30);
+    s.push(40);
+    s.push(50);
+
+    s.push(60); //stack overflow
+
+    cout<<"size of stack is :"<<s.getsize()<<endl;
+
+
+    while(!s.isEmpty()){
+        cout<<s.gettop()<<" ";
+        s.pop();
+    }
+    cout<<endl;
+
+    cout<<"size of stack is :"<<s.getsize()<<endl;
+
 
 
     return 0;
