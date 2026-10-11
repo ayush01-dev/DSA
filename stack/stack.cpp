@@ -42,6 +42,10 @@ int main(){
 
 
     return 0;
-
+    //stack<int> st;
+    //st.push();
+    //st.pop();
+    //st.size();
+    //st.top();
 
 }

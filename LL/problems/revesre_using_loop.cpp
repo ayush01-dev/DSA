@@ -51,8 +51,13 @@ Node* reverseUsingRecursion(Node* prev, Node* curr){
         return prev;
 
     // one case
+
+    //creating a temp to track rest of ll
     Node* temp = curr->next;
+    //linking current with prev
     curr->next = prev;
+
+    //now incrementing prev and curr
     prev = curr;
     curr = temp;
 

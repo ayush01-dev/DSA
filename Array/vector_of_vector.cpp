@@ -7,7 +7,7 @@ int main(){
     //vector <vector <int> >v;
     //here vector is outer vector and vector <int> is inner vector 
     
-
+          
     //initilization of vector
     vector <vector<int> > arr1 (3,vector <int> (4)); //this is 3*4 2d vector
     vector <vector<int> > arr ;
